@@ -1,0 +1,67 @@
+<head>
+    <meta charset="UTF-8">
+    <title>Lob.com Real Estate Just Sold 6x9 Postcard Template Front</title>
+    <style>
+      *,
+      *:before,
+      *:after {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+      }
+      
+      body {
+        width: 9.25in;
+        height: 6.25in;
+        margin: 0;
+        padding: 0;
+        /* If using an image, the background image should have dimensions of 2775x1875 pixels. */
+      }
+      
+      @font-face {
+        font-family: HelveticaWorldBold;
+        font-style: normal;
+        font-weight: normal;
+        src: url(https://github.com/sbaral99/template2/raw/master/HelveticaWorld-Bold.ttf);
+      }
+      
+      #backgroundImage {
+        position: absolute;
+        width: 9in;
+        height: 6in;
+        left: 0.125in;
+        top: 0.125in;
+        background-size: 9in 6in;
+        background-repeat: no-repeat;
+      }
+      
+      #greetings {
+        position: absolute;
+        left: 0.36in;
+        width: 8in;
+        top: 0.461in;
+        font-family: HelveticaWorldBold;
+        font-size: 36.5px;
+        text-transform: none;
+        color: #FFFFFF;
+      }
+    </style>
+  </head>
+  
+  <body>
+  
+    <!-- do not put text outside of the safe area -->
+    <div id="safe-area">
+  
+      <!-- your logo here! -->
+      <div><img src={{backgroundFront}} id="backgroundImage"></div>
+      <div id="greetings">
+        Hi {{salutation}},
+      </div>
+  
+  
+  
+    </div>
+  </body>
+  
+  </html>
