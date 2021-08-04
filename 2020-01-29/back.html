@@ -1,0 +1,117 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>
+  <title>Lob.com Real Estate Just Sold 6x9 Postcard Template Front</title>
+  <style>
+    *,
+    *:before,
+    *:after {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+    
+    body {
+      width: 9.25in;
+      height: 6.25in;
+      margin: 0;
+      padding: 0;
+      /* If using an image, the background image should have dimensions of 2775x1875 pixels. */
+    }
+    
+    #backgroundImage {
+      position: absolute;
+      width: 9in;
+      height: 6in;
+      left: 0.125in;
+      top: 0.125in;
+      background-size: 9in 6in;
+      background-repeat: no-repeat;
+    }
+    
+    #qrCodeSection {
+      position: absolute;
+      width: 4.16in;
+      height: 2.05in;
+      left: 4.95in;
+      top: 1.47in;
+      text-align: center;
+      right: 0in;
+    }
+    
+    #scan {
+      float: left;
+      margin-top: 1.01in;
+      margin-left: .45in;
+      font-size: medium;
+    }
+    
+    #qrCode {
+      width: 1.4in;
+      height: 1.4in;
+      padding: 0.1rem;
+      margin-top: 0.35in;
+    }
+    
+    .side,
+    .or,
+    .sidea {
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .side {
+      width: auto;
+    }
+    
+    .nowrap {
+      white-space: nowrap;
+    }
+    
+    #OR {
+      float: right;
+      margin-top: 1.01in;
+      margin-right: 0.46in;
+      font-size: medium;
+      color: #0000FF;
+    }
+    
+    #code-banner {
+      font-size: 0.8rem;
+      text-align: center;
+      color: #0000FF;
+      margin-top: 0.05in;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- do not put text outside of the safe area -->
+  <div id="safe-area">
+
+    <!-- your logo here! -->
+    <div><img src={{backgroundBack}} id="backgroundImage" </div>
+      <div id="qrCodeSection">
+        <div class="side">
+          <div id="scan">Scan me</div>
+          <img src={{qrcodelink}} id="qrCode">
+          <div id="OR">OR Visit</div>
+          <div class="sidea">
+            <div id="code-banner">
+              <i>{{camplinkUrl}}{{qrcode}}</i>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+</body>
+
+</html>
