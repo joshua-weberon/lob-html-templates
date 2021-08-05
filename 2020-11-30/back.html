@@ -2,6 +2,7 @@
 
 <head>
   <meta charset="UTF-8">
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>
   <title>Lob.com Real Estate Just Sold 6x9 Postcard Template Front</title>
   <style>
     *,
@@ -20,13 +21,6 @@
       /* If using an image, the background image should have dimensions of 2775x1875 pixels. */
     }
     
-    @font-face {
-      font-family: HelveticaWorldBold;
-      font-style: normal;
-      font-weight: normal;
-      src: url(https://github.com/joshua-weberon/fonts-in-weberon/raw/main/all_fonts/HelveticaWorld-Bold.ttf);
-    }
-    
     #backgroundImage {
       position: absolute;
       width: 9in;
@@ -37,15 +31,59 @@
       background-repeat: no-repeat;
     }
     
-    #greetings {
+    #qrCodeSection {
       position: absolute;
-      left: 0.36in;
-      width: 8in;
-      top: 0.461in;
-      font-family: HelveticaWorldBold;
-      font-size: 36.5px;
-      text-transform: none;
-      color: #FFFFFF;
+      width: 4.16in;
+      height: 2.05in;
+      left: 4.95in;
+      top: 1.47in;
+      text-align: center;
+      right: 0in;
+    }
+    
+    #scan {
+      float: left;
+      margin-top: 1.01in;
+      margin-left: .45in;
+      font-size: medium;
+    }
+    
+    #qrCode {
+      width: 1.4in;
+      height: 1.4in;
+      padding: 0.1rem;
+      margin-top: 0.35in;
+    }
+    
+    .side,
+    .or,
+    .sidea {
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .side {
+      width: auto;
+    }
+    
+    .nowrap {
+      white-space: nowrap;
+    }
+    
+    #OR {
+      float: right;
+      margin-top: 1.01in;
+      margin-right: 0.46in;
+      font-size: medium;
+      color: #0000FF;
+    }
+    
+    #code-banner {
+      font-size: 0.8rem;
+      text-align: center;
+      color: #0000FF;
+      margin-top: 0.05in;
     }
   </style>
 </head>
@@ -56,14 +94,24 @@
   <div id="safe-area">
 
     <!-- your logo here! -->
-    <div><img src={{backgroundFront}} id="backgroundImage"></div>
-    <div id="greetings">
-      Hi {{salutation}},
+    <div><img src={{backgroundBack}} id="backgroundImage" </div>
+      <div id="qrCodeSection">
+        <div class="side">
+          <div id="scan">Scan me</div>
+          <img src={{qrcodelink}} id="qrCode">
+          <div id="OR">OR Visit</div>
+          <div class="sidea">
+            <div id="code-banner">
+              <i>My.EastBayGuaranteedSale.Com/{{qrcode}}</i>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
     </div>
-
-
-
-  </div>
 </body>
 
 </html>
